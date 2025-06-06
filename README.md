@@ -63,8 +63,8 @@ yarn dev
 
 # Dashboard Images
 ## Metrics Summary
-![Screenshot 2025-06-06 114222](https://github.com/user-attachments/assets/33c7bfea-6d37-4b5a-bfe4-001a078e9d05)
 
+[Screenshot 2025-06-06 114222](https://github.com/user-attachments/assets/4bfc81ab-23ab-43a4-9712-120d7efe4129)
 
 ## Bar Chart 
 
