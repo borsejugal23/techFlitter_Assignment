@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { 
   Box, 
   Paper, 
-  Grid, 
   FormControl, 
   InputLabel, 
   Select, 
@@ -19,6 +18,8 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material';
+import Grid from '@mui/material/Grid';
+
 import { 
   DatePicker 
 } from '@mui/x-date-pickers/DatePicker';

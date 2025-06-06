@@ -102,7 +102,7 @@ const StackedBarChart = () => {
             labelSkipWidth={10}
             labelSkipHeight={10}
             labelTextColor="#fff"
-            label={(bar) => `${bar.value.toFixed(1)}%`}
+            label={(bar) => `${(bar.value ?? 0).toFixed(1)}%`}
             legends={[
               {
                 dataFrom: 'keys',
@@ -128,7 +128,6 @@ const StackedBarChart = () => {
             ]}
             theme={{
               background: '#ffffff',
-              textColor: '#333',
               axis: {
                 ticks: {
                   text: { fontSize: 12, fill: '#555' }
@@ -152,6 +151,7 @@ const StackedBarChart = () => {
                 }
               }
             }}
+
             role="application"
             ariaLabel="Percentage stacked bar chart"
             barAriaLabel={e => `${e.id}: ${e.formattedValue}% in group: ${e.indexValue}`}

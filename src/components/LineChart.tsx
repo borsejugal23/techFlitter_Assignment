@@ -58,7 +58,7 @@ const LineChart = () => {
           pointSize={8}
           pointColor={{ theme: 'background' }}
           pointBorderWidth={2}
-          pointBorderColor={{ from: 'serieColor' }}
+          pointBorderColor={{ from: 'seriesColor' }}
           useMesh={true}
           tooltip={({ point }) => (
             <div
@@ -73,7 +73,7 @@ const LineChart = () => {
                 color: '#000'
               }}
             >
-              <div><strong style={{ color: '#000' }}>{point.serieId}</strong></div>
+              <div><strong style={{ color: '#000' }}>{point.seriesId}</strong></div>
               <div><strong style={{ color: '#000' }}>Amount:</strong> {point.data.yFormatted}</div>
               <div><strong style={{ color: '#000' }}>Group:</strong> {point.data.xFormatted}</div>
             </div>
