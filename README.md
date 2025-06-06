@@ -4,7 +4,7 @@ This project is a dynamic dashboard built with **React**, **TypeScript**, **Mate
 
 ## 🚀 Live Demo
 
-[🔗 View the Live App](https://your-live-site.vercel.app)
+[🔗 View the Live App](https://tech-flitter-assignment-b5ph.vercel.app/)
 
 ## 📁 Features Overview
 
