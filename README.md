@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 📊 React Dashboard UI (TypeScript + MUI + Nivo)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a dynamic dashboard built with **React**, **TypeScript**, **Material UI v5**, and **Nivo** charting library. It features data filtering, user switching, table and chart visualizations, all in a clean and responsive interface.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[🔗 View the Live App](https://your-live-site.vercel.app)
 
-## Expanding the ESLint configuration
+## 📁 Features Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📌 **Tabs**: Switch between **Metrics View** and **Analytics View**
+- 👥 **User Switching**: "My Members" modal with mock users
+- 📆 **Filters**: Date range, sector, category, grouping attributes, metric selector
+- 📊 **Charts**: Bar chart (Nivo), optional time-series and stacked charts
+- 📋 **Data Table**: Grouped, paginated, and sortable table using MUI
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+---
+
+## 🛠 Tech Stack
+
+- React.js (Vite)
+- TypeScript
+- Material UI v5 (`@mui/material`)
+- Nivo Charts
+- State Management: React Context API
+
+---
+
+## 📦 Setup Instructions
+
+```bash
+# Clone the repository
+git clone https://github.com/borsejugal23/techFlitter_Assignment.git
+cd techFlitter_Assignment
+
+# Install dependencies using Yarn
+yarn install
+
+# Run the app in development mode
+yarn dev
+
+
+## 🧪 Mock Data Structure
+[
+  {
+    "country": "India",
+    "state": "Maharashtra",
+    "city": "Mumbai",
+    "sector": "Retail",
+    "category": "Juice",
+    "startDate": "2024-04-01",
+    "endDate": "2024-04-30",
+    "mySpend": {
+      "current": 120000,
+      "reference": 100000,
+      "absoluteChange": 20000,
+      "percentChange": 20
     },
+    ...
   },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  ...
+]
