@@ -93,7 +93,7 @@ const BarChart = () => {
                 }).format(Number(value))
             }}
             gridYValues={5}
-            gridX={false}
+            // gridX={false}
             labelSkipWidth={12}
             labelSkipHeight={12}
             theme={{
