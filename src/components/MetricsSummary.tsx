@@ -246,7 +246,7 @@ const MetricsSummary = () => {
       
       <Box sx={{ p: 2 }}>
         <Grid container spacing={2}>
-          <Grid xs={12} sm={6} md={3}>
+          <Grid >
             <MetricCard
               title={metricLabels.mySpend}
               value={summaryData.mySpend.current}
@@ -255,7 +255,7 @@ const MetricsSummary = () => {
               isLoading={isLoading}
             />
           </Grid>
-          <Grid xs={12} sm={6} md={3}>
+          <Grid >
             <MetricCard
               title={metricLabels.sameStoreSpend}
               value={summaryData.sameStoreSpend.current}
@@ -264,7 +264,7 @@ const MetricsSummary = () => {
               isLoading={isLoading}
             />
           </Grid>
-          <Grid xs={12} sm={6} md={3}>
+          <Grid >
             <MetricCard
               title={metricLabels.newStoreSpend}
               value={summaryData.newStoreSpend.current}
@@ -273,7 +273,7 @@ const MetricsSummary = () => {
               isLoading={isLoading}
             />
           </Grid>
-          <Grid xs={12} sm={6} md={3}>
+          <Grid >
             <MetricCard
               title={metricLabels.lostStoreSpend}
               value={summaryData.lostStoreSpend.current}

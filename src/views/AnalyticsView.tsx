@@ -12,7 +12,7 @@ const AnalyticsView = () => {
       <FilterPanel />
 
       <Grid container spacing={4}>
-        <Grid item xs={12}>
+        <Grid >
           <Paper 
             elevation={3} 
             sx={{ 
@@ -33,7 +33,7 @@ const AnalyticsView = () => {
           </Paper>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid >
           <Paper 
             elevation={3} 
             sx={{ 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type JSX } from 'react';
 import { 
   Box, 
   Paper, 
@@ -188,8 +188,7 @@ const FilterPanel = () => {
       <Collapse in={expanded}>
         <Box sx={{ p: 3 }}>
           <Grid container spacing={3}>
-            {/* Date Range Section */}
-            <Grid item xs={12}>
+            <Grid >
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <CalendarIcon fontSize="small" sx={{ mr: 1, color: 'primary.main' }} />
                 <Typography variant="subtitle1" fontWeight="medium">Date Range</Typography>
@@ -226,19 +225,19 @@ const FilterPanel = () => {
               </Box>
             </Grid>
             
-            <Grid item xs={12}>
+            <Grid >
               <Divider />
             </Grid>
             
             {/* Categories Section */}
-            <Grid item xs={12} md={6}>
+            <Grid >
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <CategoryIcon fontSize="small" sx={{ mr: 1, color: 'primary.main' }} />
                 <Typography variant="subtitle1" fontWeight="medium">Categories</Typography>
               </Box>
               <Grid container spacing={2}>
                 {/* Sector Dropdown */}
-                <Grid item xs={12} >
+                <Grid  >
                  <FormControl 
                     fullWidth={false} 
                     size="small" 
@@ -280,7 +279,7 @@ const FilterPanel = () => {
                 </Grid>
                 
                 {/* Category Dropdown */}
-                <Grid item xs={12}>
+                <Grid >
                   <FormControl 
                       fullWidth={false} 
                       size="small" 
@@ -323,14 +322,14 @@ const FilterPanel = () => {
             </Grid>
             
             {/* Data View Section */}
-            <Grid item xs={12} md={6}>
+            <Grid >
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
                 <ChartIcon fontSize="small" sx={{ mr: 1, color: 'primary.main' }} />
                 <Typography variant="subtitle1" fontWeight="medium">Data View</Typography>
               </Box>
               <Grid container spacing={2}>
                 {/* Attribute Selector */}
-                <Grid item xs={12}>
+                <Grid >
                   <FormControl 
                       fullWidth={false} 
                       size="small" 
@@ -373,8 +372,7 @@ const FilterPanel = () => {
                   </FormControl>
                 </Grid>
                 
-                {/* Metric Selector */}
-                <Grid item xs={12}>
+                <Grid >
                   <FormControl 
                       fullWidth={true} 
                       size="small" 
@@ -420,7 +418,7 @@ const FilterPanel = () => {
             </Grid>
             
             {/* Actions */}
-            <Grid item xs={12}>
+            <Grid >
               <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 1 }}>
                 <Button 
                   variant="outlined" 
