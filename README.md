@@ -61,24 +61,3 @@ yarn dev
   ...
 ]
 
-# Dashboard Images
-## Metrics Summary
-
-[Screenshot 2025-06-06 114222](https://github.com/user-attachments/assets/4bfc81ab-23ab-43a4-9712-120d7efe4129)
-
-## Bar Chart 
-
-![Screenshot 2025-06-06 114238](https://github.com/user-attachments/assets/732205fc-6881-4e71-b64a-8861eba17f2a)
-
-## Data Table
-
-![Screenshot 2025-06-06 114309](https://github.com/user-attachments/assets/7cbfadb5-54a7-4127-a3df-4cc0a9e602db)
-
-## Analytical View
-
-![Screenshot 2025-06-06 114330](https://github.com/user-attachments/assets/e0a68adf-9e4c-4e99-af1c-7f53ad1501c8)
-
-
-## Stacked Group Chart
-![Screenshot 2025-06-06 114344](https://github.com/user-attachments/assets/cfe0e74f-ebd9-42b1-8348-67131f71ea9d)
-
