@@ -5,7 +5,6 @@ import {
   Toolbar, 
   Typography, 
   Tabs, 
-  Tab, 
   useTheme, 
   useMediaQuery,
   Drawer,
@@ -22,13 +21,11 @@ import {
   Dashboard as DashboardIcon,
   BarChart as BarChartIcon,
   ShowChart as ShowChartIcon,
-  Settings as SettingsIcon,
-  Help as HelpIcon
 } from '@mui/icons-material';
 import UserSelector from './UserSelector';
 import MetricsView from '../views/MetricsView';
 import AnalyticsView from '../views/AnalyticsView';
-import { useDashboard } from '../context/DashboardContext';
+// import { useDashboard } from '../context/DashboardContext';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -57,19 +54,19 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-function a11yProps(index: number) {
-  return {
-    id: `dashboard-tab-${index}`,
-    'aria-controls': `dashboard-tabpanel-${index}`,
-  };
-}
+// function a11yProps(index: number) {
+//   return {
+//     id: `dashboard-tab-${index}`,
+//     'aria-controls': `dashboard-tabpanel-${index}`,
+//   };
+// }
 
 const DRAWER_WIDTH = 240;
 
 const Dashboard = () => {
   const [tabValue, setTabValue] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { currentUser } = useDashboard();
+  // const { currentUser } = useDashboard();
   
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
